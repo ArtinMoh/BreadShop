@@ -280,18 +280,29 @@ div#footerContainer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-around;
 }
 div#footerContentStart {
     font-family: 'instrumentSans';
     padding: 0px 25px;
-    width: 50%;
+    width: 35%;
 }
 div#footerTextforlogo {
     margin-top: -45px;
 }
+
+
+div#footerDivider {
+    width: 2px;
+    height: 70%;
+    background: black;
+    border-radius: 100px;
+    margin: 0 5px;
+}
+
 div#footerContentEnd {
     justify-self: end;
-    width: 50%;
+    width: 45%;
     height: 100%;
     font-family: instrumentSans-medium, sans-serif;
     font-size: 1rem;
@@ -314,6 +325,75 @@ div#footerContentEnd {
     color: black;
     margin-top: 6px;
 }
+
+a {
+    transition: .5s ease-in-out;
+}
+
+.SocialMedia-Icons-Buttons {
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(157deg, #F69148, #f69148c7, #ff6a0052);
+    border-radius: 100px;
+}
+.SocialMedia-Icons-Buttons:hover {
+    border-radius: 0px;
+}
+.SocialMedia-Icons-Buttons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div#SocialMedia-Icons-Buttons-Container {
+    width: 100%;
+    display: flex
+;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 8%;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+
+/* Apply tooltip styling to any element with the tooltip class */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+/* Use ::after to show tooltip text from data-tooltip */
+.tooltip::after {
+content: attr(data-tooltip);
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1b1b1b;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::after {
+  opacity: 1;
+  bottom: 125%;
+}
+
+
 
 /* Responsive for small screens */
 @media (max-width: 600px) {
