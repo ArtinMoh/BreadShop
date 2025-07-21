@@ -17,10 +17,14 @@ header{
     align-items: center;
 } */
 
+
+
+
 @font-face {
   font-family: 'instrumentSans';
   src: url('./fonts/InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
 
 /* Medium Weight */
@@ -28,6 +32,7 @@ header{
   font-family: 'instrumentSans-medium';
   src: url('./fonts/static/InstrumentSans-Medium.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
 
 /* SemiBold Weight */
@@ -35,6 +40,7 @@ header{
   font-family: 'instrumentSans-semibold';
   src: url('./fonts/static/InstrumentSans-SemiBold.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
 
 /* Condensed Medium */
@@ -43,6 +49,7 @@ header{
   src: url('./fonts/static/InstrumentSans_Condensed-Medium.ttf') format('truetype');
   font-style: normal;
   font-stretch: condensed;
+  font-display: swap;
 }
 
 

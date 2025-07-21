@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import React, { useState } from 'react';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -27,7 +27,7 @@ import { Button, Checkbox, Chip, } from './UI_elements.jsx';
 import Tooltip from '@mui/material/Tooltip';
 
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 function App() {
   const scrollBarsRef = useRef([]);
   const breadImages = [The1stBread, BreadImg2, BreadImg3];

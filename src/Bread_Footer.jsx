@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from 'react';
+
 
 import XIcon from './assets/images/SocialMedia-Icons/X.svg';
 import InstagramIcon from './assets/images/SocialMedia-Icons/Instagram.svg';
@@ -29,9 +31,11 @@ const ShopButton = styled.button`
   }
 `;
 //
-const [showNumber, setShowNumber] = useState(false);
+
 
 const BreadFooter = () => {
+
+  const [showNumber, setShowNumber] = useState(false);
     return (
               <footer>
         <div id="footerContainer">
@@ -46,10 +50,10 @@ const BreadFooter = () => {
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
-                <li><a onClick={() => setShowNumber(!showNumber)}  href="#">Contact Us</a></li>       
-                {showNumber && <Tooltip title="Call us" arrow placement="right-end">
+                <li><a href="#">Contact Us</a></li>       
+                <Tooltip title="Call us" arrow placement="right-end">
                 <ShopButton>+888 38294 2749</ShopButton>
-                </Tooltip>}
+                </Tooltip>
               </ul>
             </div>
           </div>
